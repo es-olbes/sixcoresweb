@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Diseño Web Personalizado",
+    "icon": "🖥️",
+    "description": "Creamos sitios web modernos, rápidos y adaptados a cualquier dispositivo. Ideal para emprendedores, negocios y profesionales."
+  },
+  {
+    "title": "Reparación de Ordenadores",
+    "icon": "🛠️",
+    "description": "Diagnóstico, limpieza, reparación y optimización de ordenadores de escritorio y portátiles, con soporte presencial o remoto."
+  },
+  {
+    "title": "Soporte Técnico Integral",
+    "icon": "🧑‍💻",
+    "description": "Solución de problemas, asistencia remota y mantenimiento preventivo para particulares y pequeños negocios."
+  }
+]

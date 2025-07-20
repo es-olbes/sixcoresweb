@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = "Contacto | SIXCORES | IT Solutions";
+const description = "Contáctanos para solicitar presupuesto o soporte técnico. Estamos aquí para ayudarte con tus proyectos digitales.";
+---
+
+<BaseLayout {title} {description}>
+  <section class="py-16 bg-white dark:bg-gray-950">
+    <div class="max-w-3xl mx-auto px-4">
+      <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+        Contáctanos
+      </h1>
+      <p class="text-gray-600 dark:text-gray-300 text-center mb-10">
+        ¿Tienes dudas, necesitas soporte o quieres un presupuesto? Escríbenos y te responderemos lo antes posible.
+      </p>
+
+      <form 
+        action="https://formspree.io/f/mldlgngp" 
+        method="POST" 
+        class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-md border border-gray-200 dark:border-gray-700"
+      >
+        <div class="mb-4">
+          <label for="name" class="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-200">Nombre</label>
+          <input type="text" id="name" name="name" required class="w-full px-4 py-2 rounded-md bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-200">Correo electrónico</label>
+          <input type="email" id="email" name="email" required class="w-full px-4 py-2 rounded-md bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+
+        <div class="mb-4">
+          <label for="message" class="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-200">Mensaje</label>
+          <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 rounded-md bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition">
+          Enviar mensaje
+        </button>
+      </form>
+
+      <div class="mt-10 text-center text-sm text-gray-600 dark:text-gray-400">
+        También puedes escribirnos directamente a: <a href="mailto:info@sixcores.com" class="text-blue-600 hover:underline">contact@sixcores.com</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

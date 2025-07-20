@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = "Acerca de | SIXCORES | IT Solutions";
+const description = "Conoce más sobre la historia, valores y visión detrás de SIXCORES. Experiencia, compromiso y pasión por la tecnología.";
+---
+
+<BaseLayout {title} {description}>
+  <section class="py-16 bg-white dark:bg-gray-950">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+        Sobre SIXCORES
+      </h1>
+
+      <p class="text-gray-700 dark:text-gray-300 text-lg mb-8">
+        Soy Jonathan, especialista en informática con más de 15 años de experiencia en soluciones tecnológicas. Fundé <strong>SIXCORES | IT Solutions</strong> con una misión clara: ayudar a personas y negocios a potenciar su presencia digital y resolver sus problemas técnicos de manera profesional, cercana y eficaz.
+      </p>
+
+      <p class="text-gray-700 dark:text-gray-300 mb-6">
+        A lo largo de mi carrera he trabajado con todo tipo de clientes: emprendedores, pymes, técnicos independientes y usuarios particulares. Mi objetivo siempre ha sido el mismo: ofrecer un servicio honesto, eficiente y adaptado a cada necesidad.
+      </p>
+
+      <div class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 mb-8">
+        <h2 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Valores que nos definen</h2>
+        <ul class="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-300">
+          <li><strong>Compromiso:</strong> Cada proyecto es tan importante como si fuera propio.</li>
+          <li><strong>Transparencia:</strong> Sin tecnicismos innecesarios ni sorpresas.</li>
+          <li><strong>Innovación:</strong> Siempre actualizado con las mejores herramientas del sector.</li>
+          <li><strong>Empatía:</strong> Escucho primero, soluciono después.</li>
+        </ul>
+      </div>
+
+      <p class="text-gray-700 dark:text-gray-300 mb-10">
+        Si buscas a alguien que te hable claro, que sepa lo que hace y que se comprometa con tu éxito, estás en el lugar correcto.
+      </p>
+
+      <div class="text-center">
+        <a
+          href="/contacto"
+          class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-xl transition"
+        >
+          Hablemos de tu proyecto
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
